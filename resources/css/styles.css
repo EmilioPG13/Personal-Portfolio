@@ -1,0 +1,57 @@
+/* CSS */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 9.6875rem;
+    height: 1.4375rem;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+    width: 5.3125rem;
+    height: 1.4375rem;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    /* Remove underline from anchor tags */
+    color: inherit;
+    /* Inherit the color from the parent element */
+}
