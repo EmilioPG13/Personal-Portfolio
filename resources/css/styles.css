@@ -4,13 +4,67 @@
     padding: 0;
 }
 
-/* Ensure the body covers the viewport */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
 }
 
-/* Center the content */
+.dark-theme{
+    --primary-color: #1e212e;
+    --secondary-color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+}
+
+header {
+    padding: 5rem 15rem 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header .logo {
+    padding-right: 17em;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Style the navigation menu */
+header .menu ul {
+    list-style: none;
+    display: flex;
+}
+
+header .menu ul li {
+    margin-left: 3em;
+    font-weight: bolder;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+    padding-left: 1.5em; /* Adjust the margin to match the spacing */
+}
+
 main {
     max-width: 900px;
     margin: 0 auto;
@@ -26,6 +80,10 @@ p, li {
     padding-top: .4em;
 }
 
+p, li, h3 {
+    color: var(--secondary-color);
+}
+
 .about img {
     padding: 0;
     float: right;
@@ -35,40 +93,6 @@ p, li {
     margin-left: 2em;
 }
 
-header {
-    padding: 5rem 15rem 0;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-header .logo a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-/* Style the navigation menu */
-header .menu ul {
-    list-style: none;
-    display: flex;
-}
-
-header .menu ul li {
-    margin-left: 20px;
-    font-weight: bolder;
-}
-
-header .menu ul li:first-child {
-    margin-left: 0;
-}
-
-header .menu ul li a {
-    text-decoration: none;
-    color: black;
-}
 
 main article {
     margin-bottom: 40px;
