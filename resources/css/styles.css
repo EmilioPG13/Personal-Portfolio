@@ -118,3 +118,114 @@ article img {
 footer {
     text-align: center;
 }
+
+
+/* Responsive queries */
+@media screen and (max-width: 938px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    header h2 {
+        padding: 1em 6.5em 0 0;
+    }
+
+    header .logo {
+        margin-right: 1em; /* Remove the right margin for the logo */
+        margin-bottom: 1rem;
+    }
+
+    header .menu ul {
+        margin-right: 2rem; /* Add top margin for spacing */
+        align-content: center;
+    }
+
+    #icon {
+        margin-left: 0;
+        margin-top: 1rem; /* Adjust the margin for spacing */
+    }
+}
+
+@media screen and (max-width: 650px) {
+    main {
+        margin: 90.048px 90.048px 0 90.048px;
+        padding: 0 64px;
+        text-align: justify;
+    }
+
+    nav h2, ul, li, a{
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+        text-align: center;
+        line-break: auto;
+    }
+
+    article img {
+        margin: 0 3em 1.5em 0;
+    }
+
+    body, h3 {
+        text-align: center;
+    }
+
+    .projects-list {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .skills img{
+        margin: auto;
+        padding: 2.3em;
+    }
+
+    .contact img {
+        margin: 0 0 0 3.7em;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    main {
+        margin: 1.5rem auto; /* Center the content horizontally */
+        padding: 0 1rem;
+        text-align: justify;
+    }
+
+    nav h2, ul, li, a {
+        padding: 0;
+        margin: 0;
+        flex-direction: column; /* Adjust to a column layout */
+        text-align: center;
+        line-break: auto;
+    }
+
+    .about img {
+        margin: 3.5em; /* Center the image horizontally */
+    }
+
+    body, h3 {
+        text-align: center;
+    }
+
+    .projects-list {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .skills img {
+        margin: auto;
+        padding: 1.5em; /* Adjust padding for better spacing */
+    }
+
+    .contact img {
+        margin: 0 0 0 4.5em; /* Center the image horizontally */
+        padding-right: 0;
+    }
+}
+
+
