@@ -11,6 +11,7 @@
     /* Colors  */
     --primary-color: #edf2fc;
     --secondary-color: #212121;
+    --hover-color: #883737;
     /* Font and Typography */
     --body-font: "Montserrat", sans-serif;
     --normal-font-size: .938rem;
@@ -19,6 +20,7 @@
 .dark-theme{
     --primary-color: #1e212e;
     --secondary-color: #fff;
+    --hover-color: #556caa;
 }
 
 body {
@@ -60,6 +62,10 @@ header .menu ul li {
 header .menu ul li a {
     text-decoration: none;
     color: var(--secondary-color);
+}
+
+.menu ul li a:hover {
+    color: var(--hover-color);
 }
 
 .menu {
