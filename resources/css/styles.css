@@ -156,18 +156,29 @@ footer {
 
 @media screen and (max-width: 650px) {
     main {
-        margin: 90.048px 90.048px 0 90.048px;
+        margin: 30px 90.048px 0 90.048px;
         padding: 0 64px;
         text-align: justify;
     }
 
-    nav h2, ul, li, a{
-        padding: 0;
-        margin: 0;
-        flex-direction: row;
-        text-align: center;
-        line-break: auto;
+    header {
+        flex-direction: column;
+        align-items: center;
     }
+
+    header .logo {
+        padding-left: 7.5em;
+        padding-bottom: .7em;
+    }
+
+    header .menu {
+        padding-right: 2.2em;
+    }
+
+    header #icon {
+        padding-top: .6em;
+    }
+
 
     article img {
         margin: 0 3em 1.5em 0;
@@ -196,41 +207,31 @@ footer {
 
 @media screen and (max-width: 430px) {
     main {
-        margin: 1.5rem auto; /* Center the content horizontally */
-        padding: 0 1rem;
+        margin: 1.5rem auto; 
         text-align: justify;
     }
 
-    nav h2, ul, li, a {
-        padding: 0;
+    header #icon {
         margin: 0;
-        flex-direction: column; /* Adjust to a column layout */
-        text-align: center;
-        line-break: auto;
+        padding: 1.5em 0 1em 0;
     }
 
     .about img {
-        margin: 3.5em; /* Center the image horizontally */
+        margin: 0 1em 2.5em 0;
+        
     }
 
-    body, h3 {
-        text-align: center;
+    article, #skills, .skills {
+        margin-bottom: 0;
     }
 
-    .projects-list {
-        text-align: center;
-        list-style-type: none;
-        padding: 0;
-    }
 
     .skills img {
-        margin: auto;
-        padding: 1.5em; /* Adjust padding for better spacing */
+        padding: 1em;
     }
 
     .contact img {
-        margin: 0 0 0 4.5em; /* Center the image horizontally */
-        padding-right: 0;
+        margin-left: 3em;
     }
 }
 
