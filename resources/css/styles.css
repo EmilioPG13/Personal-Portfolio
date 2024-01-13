@@ -128,29 +128,29 @@ footer {
 
 /* Responsive queries */
 @media screen and (max-width: 938px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
 
+    header .icon{
+        align-items: baseline;
+    }
+    
     header h2 {
-        padding: 1em 6.5em 0 0;
+        padding: 1em 6.5em .5em 3.3rem;
     }
 
     header .logo {
-        margin-right: 1em; /* Remove the right margin for the logo */
+        margin-right: 1em; 
         margin-bottom: 1rem;
     }
 
     header .menu ul {
-        margin-right: 2rem; /* Add top margin for spacing */
-        align-content: center;
+        padding-right: 1rem; 
     }
+
 
     #icon {
         margin-left: 0;
-        margin-top: 1rem; /* Adjust the margin for spacing */
+        margin-top: 1.5rem; 
+        padding-right: 3rem;
     }
 }
 
